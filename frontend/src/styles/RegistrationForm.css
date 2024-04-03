@@ -1,0 +1,63 @@
+.registerPage{
+    display: flex;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.LeftDiv{
+    width: 60%;
+    height: 100vh;
+}
+
+.LeftDiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.RightDiv{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#registration-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#registration-form input {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registration-form button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #03162b;
+    color: #fff;
+    cursor: pointer;
+}
+
+#registration-form button:hover {
+    background-color: #2b609982;
+}
+
+.error-message {
+    color: red;
+}
