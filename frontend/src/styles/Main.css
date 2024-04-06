@@ -1,0 +1,30 @@
+.Main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.Main div{
+    width: 350px;
+    height: 40vh;
+    /* overflow: hidden; */
+    align-items: center;
+    /* background-color: rgb(180, 134, 75); */
+}
+
+.Main div img{
+    width: 100%;
+    /* filter: blur(2px);
+    opacity: 0.8; */
+}
+
+.Main div h2{
+    margin-left: 120px;
+    margin-top: -10px;
+    filter: blur(0px);
+    opacity: 1;
+    font-weight: 200;
+    font-size: 1.9em;
+}

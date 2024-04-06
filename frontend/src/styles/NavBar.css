@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    font-family: 'Lucida Sans Unicode';
+    justify-content: space-between;
+    padding: 0px 70px;
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99c9c6, #6161619d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #61616185); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.logo{
+    font-size: 1.5em;
+}
+
+.elements{
+    list-style: none;
+}
+
+.elements li{
+    display: inline-block;
+    margin: 10px 15px;
+}

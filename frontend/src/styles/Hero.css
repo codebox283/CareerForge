@@ -1,0 +1,21 @@
+.Hero{
+    display: flex;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.HeadLine{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.HeroImg{
+    height: 100vh;
+}
+
+.HeroImg img{
+    height: 100%;
+}

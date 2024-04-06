@@ -36,20 +36,34 @@ exports.loginUser = async (req, res) => {
         // Check if user exists
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(404).json({ message: 'User not found' });
+            return res.status(404).json({ success: false, message: 'User not found' });
         }
 
-        // Check if password is correct
+        // Compare plain text passwords (not recommended)
         if (user.password !== password) {
-            return res.status(401).json({ message: 'Invalid password' });
+            return res.status(401).json({ success: false, message: 'Invalid password' });
         }
 
-        // Generate JWT token
-        const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        // Set session data if session middleware is properly configured
+        req.session.userId = user._id;
+        req.session.userEmail = user.email;
+        req.session.username = user.username;
 
-        res.status(200).json({ token });
+        res.status(200).json({ success: true, message: 'Login successful' });
     } catch (error) {
         console.error('Error logging in user:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500).json({ success: false, message: 'Internal server error' });
+    }
+};
+
+// Controller function to fetch the username if the user is logged in
+exports.getUsername = (req, res) => {
+    try {
+        const username = JSON.stringify(req.session.username) || 'Test';
+        // console.log(username);
+        return res.json({ username });
+    } catch (error) {
+        console.error('Error fetching username astafirullah:', error);
+        return res.status(500).json({ message: 'Internal server error' });
     }
 };
