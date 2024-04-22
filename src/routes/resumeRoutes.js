@@ -1,9 +1,6 @@
-// routes/resumeRoutes.js
-
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const { uploadResume } = require('../controllers/resumeController');
 const { exec } = require('child_process');
 
 // Multer middleware for handling file uploads
@@ -13,10 +10,13 @@ const upload = multer({ dest: 'uploads/' });
 router.post('/upload', upload.single('resume'), async (req, res) => {
     try {
         // Execute Python script using child_process
-        exec('python D:/projects/CareerForge/src/utils/resumeParser.py', (error, stdout, stderr) => {
+        exec(`python "D:/projects/CareerForge/src/utils/resumeParser.py" "${req.file.path}"`, (error, stdout, stderr) => {
             if (error) {
                 console.error('Error executing Python script:', error);
                 res.status(500).json({ error: 'Error executing Python script' });
+            } else if (stderr) {
+                console.error('Python script error:', stderr);
+                res.status(500).json({ error: 'Python script error' });
             } else {
                 // Resume parsing completed successfully
                 console.log('Resume parsing completed:', stdout);

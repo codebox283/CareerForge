@@ -1,23 +1,68 @@
-.navbar{
+.navbar {
     display: flex;
     font-family: 'Lucida Sans Unicode';
     justify-content: space-between;
     padding: 0px 70px;
-    background: #616161;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #99c9c6, #6161619d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #9bc5c3, #61616185); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #616161;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a7c7c5, #6161619d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8bbbbb, #9f787885);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.logo{
-    font-size: 1.5em;
-}
+.bouncing-letters {
+    text-align: center; 
+    margin-top: 15px; 
+} 
 
-.elements{
+.bounce { 
+    animation-name: bounce; 
+} 
+
+.bouncing-letters span { 
+    animation-timing-function: linear; 
+    animation-duration: 1s; 
+    animation-iteration-count: 1; 
+    display: inline-block; 
+} 
+
+.bouncing-letters span:hover { 
+    color: whitesmoke; 
+} 
+
+@keyframes bounce { 
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+} 
+
+.elements {
     list-style: none;
 }
 
-.elements li{
+.elements li {
     display: inline-block;
     margin: 10px 15px;
 }

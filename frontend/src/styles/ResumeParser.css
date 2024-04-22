@@ -1,0 +1,51 @@
+.ResumeParser {
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="file"] {
+    /* Style the color of the message that says 'No file chosen' */
+    font-family: 'Lucida Sans Unicode';
+      color: #878787;
+    }
+    [type="file"]::-webkit-file-upload-button {
+      background: #2a79b1;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 12px;
+      outline: none;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      transition: all 0.1s ease;
+      font-family: 'Lucida Sans Unicode';
+    }
+    
+    [type="file"]::-webkit-file-upload-button:hover {
+      background: #3b9fe6;
+      /* border: 2px solid #535353; */
+      /* color: #000; */
+    }
+
+.ResumeParser div button {
+    padding: 10px 20px;
+    background-color: #4b7415;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.ResumeParser button:hover {
+    background-color: #5b9c06;
+}
+
+.Output div{
+  width: 100vw;
+  
+}
