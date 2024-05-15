@@ -1,6 +1,7 @@
 .Hero{
     display: flex;
     font-family: 'Lucida Sans Unicode';
+    background-color: black;
 }
 
 .HeadLine{
@@ -9,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 
 }
 

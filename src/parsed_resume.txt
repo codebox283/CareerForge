@@ -1,0 +1,125 @@
+Saurabh Shukla
+
+saurabhshukla.tech | Github - Saurabh13042004
+sv176734@gmail.com | +91 8149190804 | LinkedIn - sv176734
+
+EDUCATION
+CHITKARA UNIVERSITY
+BE in Computer Science
+CGPA: 9.00
+
+COURSEWORK
+UNDERGRADUATE
+Object Oriented Programming
+Operating Systems
+Introduction To Programming
+Data Structures
+R-DBMS
+Object Oriented Software Engineering
+Computer Networking
+
+SKILLS
+PROGRAMMING
+Languages
+• Programming : Java , C++ ,
+Javascript , C , Python
+
+Tools
+• Development : Git ,VS Code
+• Design : Figma , Canva
+• API Testing : Postman
+Framework & Library
+• Frontend : React.js , Next.js
+• Backend : Node.js , Express.js , Flask
+• CSS : Tailwind CSS , Bootstrap
+• Javascript : jQuery , GSAP
+Technologies
+• Cloud : AWS
+• Database : MySQL , MongoDB,
+
+Firebase
+
+• Web Protocols : HTTP , RESTful APIs
+
+OTHERS
+• Designing
+• Exploring new Technologies
+• Gaming
+
+EXPERIENCE
+INDUSTRIAL AREA DEVELOPMENT AUTHORITY | Full Stack
+Developer
+Dec 2023 – Present
+
+• Developing a website and billing portal for (IADA) in Himachal Pradesh,
+facilitating online payment solutions for water bills and other expenses,
+leveraging MERN , AWS, and PostgreSQL databases.
+
+• Integrate ICICI banking API to enable secure and seamless online transactions,
+
+ensuring efficient payment processing and enhancing user experience for
+residents and businesses within the industrial area.
+
+GEEKSFORGEEKS | Content Writer
+April 2023 – March 2024 | Freelance
+
+• Enhanced web development articles, such as ”Bootstrap vs Tailwind CSS,”
+
+refining content for clarity and relevance.
+
+• Published an engaging article on the React animation library ”react-reveal,”
+
+including code implementations, garnering significant views and interaction.
+
+PROJECTS
+PREPHELP | MongoDB,React.js,Tailwind CSS,Node.js
+Dec 2023 - Present | Chitkara University
+
+• A platform for my university campus students to access past interview
+
+questions, test questions, and user-shared interview experiences, along with
+admin tools for faculty management.
+
+• PrepHelp’s repository of interview experiences equips students with valuable
+insights, boosting their confidence and preparation for placement drives.
+
+WANDERWORD | Python , Flask , PostgreSQL , CKEditor
+April 2024
+
+• It is a dynamic blogging platform built with Python, Flask, and Bootstrap,
+
+including PostgreSQL for database management, SQLAlchemy for ORM, and
+CKEditor for rich text editing capabilities.
+
+• Addressed the need for an efficient content creation experience by seamlessly
+integrating CKEditor, where users can format text, insert images, and enhance
+posts.
+
+HOMEHUB | React.js , Firebase , OpenCage API , Leaflet Maps
+Nov 2023
+
+• It is a platform where users can list their properties for sale or rent, as well as
+
+browse properties listed by others users.
+
+• Implemented address-to-map conversion seamlessly using the OpenCage
+
+Geocoding API and Leaflet API, allowing users to easily explore the property’s
+surroundings and nearby amenities, enriching their experience.
+
+ACHIEVEMENTS
+2023 Winner
+2022
+2021
+2021
+
+2nd Runner Up HackDay-21 (Hackathon)
+Top 10
+4th/150
+
+Octahacks 4.0
+Blind Coding Competition
+
+Web-a-thon
+
+

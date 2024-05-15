@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/NavBar.css'
-import Img from '../assets/Img2.jpg';
+import Img from '../assets/HeroImgAlt2.jpg';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -8,8 +8,8 @@ const Hero = () => {
         <div className='Hero'>
             <div className='HeadLine'>
                 <div>
-                <h1>Some Head Line Content</h1>
-                <p>Some information about the site</p>
+                <h1>Resume Parsing and Builder</h1>
+                <p>Streamline resume parsing for simpler info extraction</p>
                 </div>
             </div>
             <div className='HeroImg'>

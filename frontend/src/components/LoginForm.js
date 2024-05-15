@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import '../styles/LoginForm.css';
 
 const LoginForm = () => {
@@ -22,15 +22,20 @@ const LoginForm = () => {
             console.log(response.data);
             
             if (response.data.success) {
-                // User login successful, update loggedIn state
                 setLoggedIn(true);
             } else {
-                // User not found or invalid credentials
                 setError('Invalid email or password. Please try again.');
             }
         } catch (error) {
             console.error('Error logging in:', error);
             setError('An error occurred. Please try again.');
+        }
+        try{
+            const tokenRes = await axios.post('http://localhost:5500/api/login', formData);
+            const token = tokenRes.data.token;
+            localStorage.setItem('token', token);
+        }catch (error){
+            console.log('Error generating token:', error);
         }
     };
 

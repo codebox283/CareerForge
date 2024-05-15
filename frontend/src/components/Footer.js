@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/NavBar.css'
-import Img from '../assets/Img2.jpg';
 import '../styles/NavBar.css';
 import '../styles/Footer.css';
 

@@ -12,11 +12,10 @@ def parse_resume(file_path):
         else:
             raise ValueError("Unsupported file format. Only PDF and DOCX files are supported.")
         
-        # text = text.decode('utf-8') if isinstance(text, bytes) else text
-        # Perform resume parsing logic here
-
+        # Decode text if it's a byte string
+        text = text.decode('utf-8') if isinstance(text, bytes) else text
         
-
+        # Perform resume parsing logic here
 
         # For demonstration, let's just return the extracted text
         return text
@@ -32,5 +31,10 @@ if __name__ == "__main__":
     file_path = sys.argv[1]
     parsed_text = parse_resume(file_path)
     if parsed_text is not None:
-        print(parsed_text.encode('utf-8'))
-
+        try:
+            # Write the text to a file
+            with open('parsed_resume.txt', 'w', encoding='utf-8') as f:
+                f.write(parsed_text)
+            print("Resume text has been written to parsed_resume.txt")
+        except Exception as e:
+            print(f"Error writing parsed text to file: {e}", file=sys.stderr)

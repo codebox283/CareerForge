@@ -13,12 +13,15 @@ const Homepage = () => {
     useEffect(() => {
         const fetchUsername = async () => {
             try {
-                const response = await axios.get('http://localhost:5500/api/users/username');
-                setUsername(response.data.username);
+                const response = await axios.get('http://localhost:5500/api/username', {
+                    headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+                });
+                setUsername(response.data);
             } catch (error) {
                 console.error('Error fetching username:', error);
             }
         };
+
         fetchUsername();
     }, []);
 
